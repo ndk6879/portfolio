@@ -313,7 +313,6 @@ p {
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
-  /* left: 0; */
 }
 
 .category__count {
@@ -344,7 +343,7 @@ p {
   align-items: center;
   width: 200px;
   height: 250px;
-  background-color: var(--color-white);
+  background-color: var(--color-light-white);
   margin: 20px;
 }
 
