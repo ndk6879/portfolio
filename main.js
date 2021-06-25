@@ -22,8 +22,15 @@ navbarMenu.addEventListener('click', (event) => {
     if(link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
 })
+
+// Navbar toggle button for small screen
+const navbarToggelBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggelBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
 
 // Handle Contact-Me button
 const contactButton = document.querySelector('.home__contact');
@@ -64,7 +71,7 @@ workBtnContainer.addEventListener('click', (e) => {
         return;
     }
 
-    // Remove selection from previous item and select new one
+// Remove selection from previous item and select new one
     const active = document.querySelector('.category__btn.selected');
     active.classList.remove('selected');
     const target = 
@@ -83,6 +90,8 @@ workBtnContainer.addEventListener('click', (e) => {
         projectContainer.classList.remove('anim-out');
     },300);
 });
+
+
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: 'smooth' });
