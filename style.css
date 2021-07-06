@@ -101,7 +101,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 8px;
   background-color: transparent;
   color: var(--color-white);
   transition: all var(--animation-duration) ease-in-out;
@@ -110,7 +110,7 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-blue);
-  padding: 8px;
+  padding: 0 8px;
 }
 
 .navbar__logo {
@@ -177,7 +177,7 @@ p {
 }
 
 .home__contact:hover {
-  color: var(--color-orange);
+  background-color: var(--color-dark-blue);
 }
 
 /* Common Section */
@@ -373,10 +373,10 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 250px;
+  width: 300px;
+  height: 350px;
   background-color: var(--color-light-white);
-  margin: 20px;
+  margin: 5px;
 }
 
 .project.invisible {
@@ -523,8 +523,8 @@ p {
 
   .navbar__toggle-btn {
     display: block;
-    top: 14px;
-    right: 14px;
+    top: 12px;
+    right: 12px;
     font-size: var(--font-medium);
   }
 
