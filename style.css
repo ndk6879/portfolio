@@ -257,7 +257,7 @@ p {
 /* Skills */
 
 #skills {
-  background-color: var(--color-yellow);
+  /* background-color: var(--color-yellow); */
 }
 
 .skillset {
@@ -343,16 +343,15 @@ p {
   background-color: var(--color-orange);
   border-radius: 50%;
   color: var(--color-white);
-  display: inline-block;
   width: 24px;
   height: 24px;
   line-height: 24px;
-  position: absolute;
-  top: 14px;
-  right: 16px;
-  line-height: 28px;
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  left: 4px;
   opacity: 0;
-  transition: all var(--animation-duration);
+  transition: all var(--animation-duration) ease-in;
 }
 
 .work__projects {
