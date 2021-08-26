@@ -92,7 +92,7 @@ workBtnContainer.addEventListener('click', (e) => {
 const sectionsIds = [
     '#home', 
     '#about', 
-    '#skills', 
+    // '#skills', 
     '#work', 
     '#contact'
 ];
@@ -142,7 +142,7 @@ sections.forEach(section => observer.observe(section));
 window.addEventListener('wheel', () => {
     if (window.scrollY === 0) {
         selectedNavIndex = 0;
-    } else if (window.scrollY + window.innerHeight === document.body.clientHeight) {
+    } else if (Math.round(window.scrollY + window.innerHeight) >= document.body.clientHeight) {
         selectedNavIndex = navItems.length  - 1;
     }
     selectNavItem(navItems[selectedNavIndex]);
