@@ -1,271 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donggyun's Portfolio</title>
-    <meta name="description" content="Portfolio for software engineer Donggyun">
-    <meta name="author" content="Donggyun">
-    <script src="https://kit.fontawesome.com/17c162c50a.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type = "image/png" href="imgs/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="fab fa-diaspora"></i>
-            <a href= "">Donggyun</a>
-        </div>
-            
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active" data-link = "#home">Home</li>
-            <li class="navbar__menu__item" data-link = "#about">About</li>
-            <!-- <li class="navbar__menu__item" data-link = "#skills">Skills</li> -->
-            <li class="navbar__menu__item" data-link = "#work">Work</li>
-            <!-- <li class="navbar__menu__item" data-link = "#testimonials">Testimonial</li> -->
-            <li class="navbar__menu__item" data-link = "#contact">Contact</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>Ellie&#39;s Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for world-renowned software
+    engineer Ellie"
+    />
+    <meta name="author" content="Ellie" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="엘리의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://dream-ellie.github.io/portfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://dream-ellie.github.io/portfolio/images/og.webp"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Javascript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">Ellie</a></h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#work">My work</a></li>
+          <li>
+            <a class="header__menu__item" href="#testimonial">Testimonial</a>
+          </li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
         </ul>
-        <!-- Toggle Button -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-    </nav>
-
-    <!-- Home -->
-    <section id="home">
-        <div class="home__container">
-            <img src="imgs/2profile.jpg" alt="Donggyun's profile" class="home__avatar">
-            <h1 class="home__title">Hello! 2024 <br>I'm Donggyun</h1>
-            <h2 class="home__description">Undergraduate at Penn State majoring in Computer Science</h2>
-            <button class="home__contact">Contact Me</button>
-        </div>
-    </section>
-
-<!-- About Me -->
-    <section id="about" class = "section section__container">
-        <h1>About me</h1>
-        <p>
-            <!-- 웹개발에 관심 많은 개발자<br>
-            발전을 위한 도전과 노력<br> 
-            마음가짐: 그냥해 가능해<br>   -->
-            Interested in Software Developments<br>
-            Strong programming skills and Passion for learning new technologies.<br>
-            Mindset: Just Do It. Nothing is impossible.
-        </p>
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <h2 class="major__title">Front-end</h2>
-                <div class="major__description">HTML, CSS, JavaScript, React</div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-python"></i>
-                </div>
-                <h2 class="major__title">Back-end</h2>
-                <div class="major__description">Python, Django, C, Java, SQL</div>
-            </div>
-            
-        </div>
-        <!-- <div class="about__schools">
-            <div class="school">
-                <img src="imgs/schools/Archbishop_Stepinac_High_School_seal_logo.jpg" alt="Stepinac" class="school__logo" width="100px" height="100px">
-                <div class="school__description">
-                    <p class="school__name">Archbishop Stepinac High School</p>
-                    <p class="school__period">2013 ~ 2016</p>
-                </div>
-            </div>
-            <div class="school">
-                <img src="imgs/schools/psu_logo.jpg" alt="Penn State" class="school__logo" width="100px" height="100px">
-                <div class="school__description">
-                    <p class="school__name">Pennsylvania State University</p>
-                    <p class="school__period">2016 ~ In Progress</p>
-                </div>
-            </div>
-        </div> -->
-    </section>
-
-<!-- Skills -->
-    <!-- <section id="skills" class = "section">
-        <div class="section__container">
-            <h1>Skills</h1>
-            <h2>Skill & Attributes</h2>
-            <p>Experience with all phases of the software life-cycle. Passion for learning new technologyies. Capable of working within a team environment and independently. Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <div class="max-container home__container">
+          <img
+            class="home__avatar"
+            src="images/profile.png"
+            alt="Ellie's profile"
+          />
+          <div>
+            <h2 class="home__title" aria-label="Hello, I'm Dream Coder Ellie">
+              Hello <br />I&#39;m
+              <strong class="home__title--strong">Dream Coder</strong>, Ellie
+            </h2>
+            <p class="home__description">
+              A software engineer currently residing in Sydney, Australia
             </p>
-            <div class="skillset">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">Skills</h3>
-                    
-                    
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>CSS</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>JavaScript</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>Python</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 95%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>Django</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>
-                        <ul class="tools_list">
-                            <li><span>Atom</span></li>
-                            <li><span>Pycharm</span></li>
-                            <li><span>Visual Studio Code</span></li>
-                            <li><span>DB Browser for SQLite</span></li>
-                        </ul>
-                    </div>
-                    <div class="etc">
-                        <h3 class="skillset__title">Etc</h3>
-                        <ul class="etc__list">
-                            <li><span>Git & Github</span></li>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </div>
+            <a class="home__contact" href="#contact">Contact Me</a>
+          </div>
         </div>
-    </section> -->
-
-<!-- Work -->
-    <section id="work" class = "section">
-        <div class="section__container">
-            <h1>Work</h1>
-            <h3>Projects</h3>
-            <div class="work__categories">
-                <button class="category__btn selected" data-filter = "*">All <span class="category__count">3</span></button>
-                <button class="category__btn" data-filter = "front-end">Front-end <span class="category__count">1</button>
-                <button class="category__btn" data-filter = "back-end">Back-end <span class="category__count">2</button>
+      </section>
+      <!-- About -->
+      <section id="about" class="section max-container">
+        <h2 class="title">About me</h2>
+        <p class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+          repudiandae nemo nihil, similique quis hic! Numquam eligendi
+          cupiditate temporibus in qui sed, hic debitis minus, eum laborum
+          veritatis deserunt rem.
+        </p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Front-end</p>
+            <p>HTML, CSS, JavaScript, TypeScript, React, Vue, Web APIs</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-mobile major__icon"></i>
+            <p class="major__title">Mobile</p>
+            <p>Android, iOS, React Navtive, Flutter, Java, Swift, Kotlin</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">Back-end</p>
+            <p>Java, JavaScript, Go, NodeJs, Rest APIs, GraphQL</p>
+          </li>
+        </ul>
+        <ul class="jobs">
+          <li class="job">
+            <img src="images/jobs/google.png" alt="google logo" />
+            <div>
+              <p class="job__name">Google as Senior Software Engineer</p>
+              <p class="job__period">2019 Oct - Until now</p>
             </div>
-            
-            <div class="work__projects">
-                
-
-                <a href="https://github.com/ndk6879/portfolio" class = "project"target = "blank" data-type = "front-end">
-                    <img src="imgs/projects/portfolio_main_page.PNG" alt="food project" class= "project__img">
-                        <div class="project__description">
-                            <h3>Portfolio Site</h3>
-                            <span>Portfolio with HTML, CSS, and Javascript.</span>
-                        </div>
-                </a>
-                
-                <a href="https://github.com/ndk6879/pybo" class = "project" target = "blank" data-type = "back-end">
-                    <img src="imgs/projects/pybo_projects.PNG" alt="pybo project" class= "project__img">
-                    <div class="project__description">
-                        <h3>Pybo Project</h3>
-                        <span>Board project with Django and deployment with AWS.</span>
-                    </div>
-                </a>
-
-                <a href="https://github.com/ndk6879/Menu-Search-Project" class = "project" target = "blank" data-type = "back-end">
-                    <img src="imgs/projects/food_project.PNG" alt="food project" class= "project__img">
-                        <div class="project__description">
-                            <h3>Food Project</h3>
-                            <span>First personal project with Django.</span>
-                        </div>
-                </a>
-                
-
+          </li>
+          <li class="job">
+            <img src="images/jobs/samsung.png" alt="samsung logo" />
+            <div>
+              <p class="job__name">Samsung as Software Engineer</p>
+              <p class="job__period">2014 Sept - 2019 Oct</p>
             </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">My Skills</h2>
+          <p class="description">Skills & Attributes</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
+            doloremque sint deleniti vel quod itaque molestias, suscipit dolor
+            cupiditate saepe rem minima, amet ipsum accusantium architecto
+            laboriosam dolore id necessitatibus?
+          </p>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills__title">Coding Skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML</span><span>98%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>CSS</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>TypeScript</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>React</span><span>79%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 79%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>NodeJs</span><span>68%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 68%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ</li>
+                <li>Android Studio Code</li>
+                <li>iOS development tools</li>
+                <li>Sketch app</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>Git</li>
+                <li>Scrum Master</li>
+                <li>Math</li>
+              </ul>
+            </section>
+          </div>
         </div>
-    </section>
-
-    <!-- Testimonials -->
-    <!-- <section id="testimonials" class = "section">
-        <div class="section__container">
-            <h1>Testimonials</h1>
-            <h3>See what they say about me</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="imgs/testimonials/person1.jpg" alt="person1" class="testimonial__avatar">
-                    <div class="testmonial__speech-bubble">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolorem adipisci repudiandae nesciunt soluta amet reprehenderit ratione, corrupti nostrum voluptates aut, quisquam facilis sit perferendis repellat pariatur deleniti vitae praesentium.</p>
-                        <p class="name"><a href=""> Tom Cruise</a> / Hollywood</p>
-                    </div>
+      </section>
+      <!-- Work -->
+      <section id="work" class="section">
+        <div class="max-container">
+          <h2 class="title">My work</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">8</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="front-end">
+                Front-end <span class="category__count">4</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="back-end">
+                Back-end <span class="category__count">2</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="mobile">
+                Mobile <span class="category__count">2</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project1.webp"
+                  alt="project1"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSS</p>
                 </div>
-                <div class="testimonial">
-                    <div class="testmonial__speech-bubble">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolorem adipisci repudiandae nesciunt soluta amet reprehenderit ratione, corrupti nostrum voluptates aut, quisquam facilis sit perferendis repellat pariatur deleniti vitae praesentium.</p>
-                        <p class="name"><a href=""> Dwayne Johnson</a> / Hollywood</p>
-                    </div>
-                    <img src="imgs/testimonials/person2.jpg" alt="person1" class="testimonial__avatar">
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project2.webp"
+                  alt="project2"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #2</h3>
+                  <p>Clone Coding with HTML, CSS</p>
                 </div>
-            </div>
+              </a>
+            </li>
+            <li class="project" data-type="back-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project3.webp"
+                  alt="project3"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #3</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="mobile">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project4.webp"
+                  alt="project4"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #4</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project5.webp"
+                  alt="project5"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #5</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="back-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project6.webp"
+                  alt="project6"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #6</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="mobile">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project7.webp"
+                  alt="project7"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #7</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/project8.webp"
+                  alt="project8"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #8</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-        
-    </section> -->
-
-    <!-- Contact -->
-    <section id="contact" class = "section">
-        <h1 class="contact__title">Let's talk!</h1>
-        <h2 class="contact__email">ndk68790@gmail.com</h2>
-        <div class="contact__links">
-            <a href="https://github.com/ndk6879" target = "_blank">
-                <i class="fab fa-github"></i>
+      </section>
+      <!-- Testimonials -->
+      <section id="testimonial" class="section max-container">
+        <h2 class="title">Testimonial</h2>
+        <p class="description">See what they say about me</p>
+        <ul class="testimonials">
+          <li class="testimonial">
+            <img
+              src="images/testimonials/people1.webp"
+              alt="people1"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ad
+                iusto, ea alias, at sit libero laboriosam eaque eum, reiciendis
+                obcaecati vitae non reprehenderit beatae officiis. Dolore
+                corporis eveniet labore.
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">James Kim</a>
+                /Google
+              </p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              src="images/testimonials/people2.webp"
+              alt="people2"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+                adipisci quibusdam perspiciatis neque consequuntur nostrum
+                quisquam dolore consequatur voluptatum animi laborum, sequi
+                ipsum rerum voluptatibus sit ab similique quos velit?
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">Anna Jin</a>
+                /Samsung
+              </p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              src="images/testimonials/people3.webp"
+              alt="people3"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, mollitia. Fugiat recusandae unde ducimus harum
+                voluptas earum reiciendis expedita inventore quas ab eum
+                dignissimos, maiores deleniti officiis qui, repudiandae
+                voluptatibus?
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">Anna Jin</a>
+                /Samsung
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Arrow up -->
+      <aside>
+        <a class="arrow-up" href="#home" title="back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <h2 class="title">Let&#39;s talk</h2>
+        <p class="description">dream.coder.ellie@gmail.com</p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/dream-ellie"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/donggyun-nam-b54b67188/" target = "_blank">
-                <i class="fab fa-linkedin"></i>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/dream-ellie"
+              target="_blank"
+              title="my linkedin link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
             </a>
-        </div>
-        <p class="contact__rights">2022 Donggyun Portfolio Project - All Rights Reserved </p>
-    </section>
-
-    <button class="arrow-up">
-        <i class="fas fa-arrow-up"></i>    
-    </button>
-
-</body>
+          </li>
+        </ul>
+        <p>ⓒDream Coding Ellie - All rights reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>
