@@ -5,7 +5,6 @@ new TypeIt('.home__title--strong', {
   speed: 100,
 }) // Dream Coder|
   .move(-11)
-  .type('Amazing ') //Amazing |Dream Coder
   .pause(1000)
   .move(null, { to: 'END' }) //Amazing Dream Coder|
   .delete() //|

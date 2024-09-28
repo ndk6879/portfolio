@@ -613,3 +613,10 @@ p {
   height: 50px;
   font-size: 30px;
 }
+
+.circle-image {
+  width: 150px;  /* Set the width */
+  height: 150px; /* Set the height */
+  border-radius: 50%;  /* This makes the image round */
+  object-fit: cover;  /* Ensures the image fills the circle without distortion */
+}

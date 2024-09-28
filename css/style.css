@@ -524,6 +524,7 @@ button:focus {
 #contact {
   position: relative;
   background-color: var(--color-primary);
+  background-image: var(--home-bg-svg);
   color: var(--color-text);
 }
 
