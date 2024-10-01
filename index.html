@@ -57,16 +57,24 @@
     <header class="header">
       <div class="header__logo">
         <h1 class="header__logo__title"><a href="#">🖥️ Andy</a></h1>
+        
+        <!-- Resume Button -->
+      <div class="header__resume">
+        <a href="https://drive.google.com/file/d/1UIYyRte1hC6NCyHqi7VFnuVDArbZS5td/view?usp=drive_link" class="resume-btn" target="_blank">Resume</a>
       </div>
+      </div>
+      
+      
+
       <nav class="header__nav">
         <ul class="header__menu">
           <li><a class="header__menu__item active" href="#home">Home</a></li>
           <li><a class="header__menu__item" href="#about">About</a></li>
           <li><a class="header__menu__item" href="#skills">Skills</a></li>
           <li><a class="header__menu__item" href="#work">My work</a></li>
-          <li>
+          <!-- <li>
             <a class="header__menu__item" href="#testimonial">Testimonial</a>
-          </li>
+          </li> -->
           <li><a class="header__menu__item" href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -167,10 +175,9 @@
           <h2 class="title">My Skills</h2>
           <p class="description">Skills & Attributes</p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-            doloremque sint deleniti vel quod itaque molestias, suscipit dolor
-            cupiditate saepe rem minima, amet ipsum accusantium architecto
-            laboriosam dolore id necessitatibus?
+            <!-- 1.5 years of industry experience in design, implementation, testing, and API documentation.<br>
+            Specialized in crafting efficient, user-friendly products with modern technology.<br>
+            Committed to developing scalable, high-performance solutions that drive innovation. -->
           </p>
           <div class="skills">
             <section class="skills__coding">
@@ -178,7 +185,7 @@
               <ul>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>HTML</span><span>98%</span>
+                    <span>Python</span><span>98%</span>
                   </div>
                   <div class="bar__bg">
                     <div class="bar__value" style="width: 98%"></div>
@@ -186,7 +193,26 @@
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>CSS</span><span>90%</span>
+                    <span>Java</span><span>95%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 95%"></div>
+                  </div>
+                </li>
+                
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>SQL & NoSQL</span><span>95%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 95%"></div>
+                  </div>
+                </li>
+                
+
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Javascript</span><span>90%</span>
                   </div>
                   <div class="bar__bg">
                     <div class="bar__value" style="width: 90%"></div>
@@ -194,7 +220,7 @@
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>JavaScript</span><span>90%</span>
+                    <span>React</span><span>90%</span>
                   </div>
                   <div class="bar__bg">
                     <div class="bar__value" style="width: 90%"></div>
@@ -202,46 +228,43 @@
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>TypeScript</span><span>80%</span>
+                    <span>Nodejs</span><span>90%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 80%"></div>
+                    <div class="bar__value" style="width: 90%"></div>
                   </div>
                 </li>
+
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>React</span><span>79%</span>
+                    <span>Express</span><span>90%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 79%"></div>
-                  </div>
-                </li>
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span>NodeJs</span><span>68%</span>
-                  </div>
-                  <div class="bar__bg">
-                    <div class="bar__value" style="width: 68%"></div>
+                    <div class="bar__value" style="width: 90%"></div>
                   </div>
                 </li>
               </ul>
             </section>
+            
             <section class="skills__tools">
               <h3 class="skills__title">Tools</h3>
               <ul>
+                <br>
+                <br>
                 <li>Visual Studio Code</li>
-                <li>IntelliJ</li>
-                <li>Android Studio Code</li>
-                <li>iOS development tools</li>
-                <li>Sketch app</li>
+                <li>Jupyter Notebook</li>
+                <li>Notion</li>
+                <li>Jira</li>
+                <li>ChatGPT</li>
               </ul>
             </section>
             <section class="skills__etc">
               <h3 class="skills__title">Etc</h3>
               <ul>
+                <br>
+                <li>Slack</li>
+                <li>Zoom/Google Meet</li>
                 <li>Git</li>
-                <li>Scrum Master</li>
-                <li>Math</li>
               </ul>
             </section>
           </div>
@@ -265,18 +288,18 @@
             </li>
             <li>
               <button class="category" data-category="back-end">
-                Back-end <span class="category__count">2</span>
+                Back-end <span class="category__count">4</span>
               </button>
             </li>
-            <li>
+            <!-- <li>
               <button class="category" data-category="mobile">
                 Mobile <span class="category__count">2</span>
               </button>
-            </li>
+            </li> -->
           </ul>
           <ul class="projects">
             <li class="project" data-type="front-end">
-              <a href="#" target="_blank">
+              <!-- <a href="#" target="_blank"> -->
                 <img
                   src="images/projects/project1.webp"
                   alt="project1"
@@ -284,12 +307,12 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #1</h3>
-                  <p>Clone Coding with HTML, CSS</p>
+                  <p>Full-Stack Application with Node.js & MongoDB</p>
                 </div>
               </a>
             </li>
             <li class="project" data-type="front-end">
-              <a href="#" target="_blank">
+              <!-- <a href="#" target="_blank"> -->
                 <img
                   src="images/projects/project2.webp"
                   alt="project2"
@@ -297,12 +320,12 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #2</h3>
-                  <p>Clone Coding with HTML, CSS</p>
+                  <p>E-Commerce Platform using React & JavaScript                 </p>
                 </div>
               </a>
             </li>
             <li class="project" data-type="back-end">
-              <a href="#" target="_blank">
+              <!-- <a href="#" target="_blank"> -->
                 <img
                   src="images/projects/project3.webp"
                   alt="project3"
@@ -310,12 +333,13 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #3</h3>
-                  <p>Clone Coding with HTML, CSS</p>
+                  <p>API Integration with Node.js & Express  
+                  </p>
                 </div>
               </a>
             </li>
-            <li class="project" data-type="mobile">
-              <a href="#" target="_blank">
+            <li class="project" data-type="back-end">
+              <!-- <a href="#" target="_blank"> -->
                 <img
                   src="images/projects/project4.webp"
                   alt="project4"
@@ -323,12 +347,12 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #4</h3>
-                  <p>Clone Coding with HTML, CSS</p>
+                  <p>Cloud-Hosted Application with AWS & Node.js                  </p>
                 </div>
               </a>
             </li>
             <li class="project" data-type="front-end">
-              <a href="#" target="_blank">
+              <!-- <a href="#" target="_blank"> -->
                 <img
                   src="images/projects/project5.webp"
                   alt="project5"
@@ -336,12 +360,13 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #5</h3>
-                  <p>Clone Coding with HTML, CSS</p>
+                  <p>Real-Time Data Dashboard with JavaScript & Power BI
+                  </p>
                 </div>
               </a>
             </li>
             <li class="project" data-type="back-end">
-              <a href="#" target="_blank">
+              <!-- <a href="#" target="_blank"> -->
                 <img
                   src="images/projects/project6.webp"
                   alt="project6"
@@ -349,12 +374,13 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #6</h3>
-                  <p>Clone Coding with HTML, CSS</p>
+                  <p>Database-Driven Web App with MySQL & Node.js
+                  </p>
                 </div>
               </a>
             </li>
-            <li class="project" data-type="mobile">
-              <a href="#" target="_blank">
+            <li class="project" data-type="back-end">
+              <!-- <a href="#" target="_blank"> -->
                 <img
                   src="images/projects/project7.webp"
                   alt="project7"
@@ -362,12 +388,13 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #7</h3>
-                  <p>Clone Coding with HTML, CSS</p>
+                  <p>Dynamic UI Development with React & JavaScript
+                  </p>
                 </div>
               </a>
             </li>
             <li class="project" data-type="front-end">
-              <a href="#" target="_blank">
+              <!-- <a href="#" target="_blank"> -->
                 <img
                   src="images/projects/project8.webp"
                   alt="project8"
@@ -375,7 +402,8 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #8</h3>
-                  <p>Clone Coding with HTML, CSS</p>
+                  <p>Responsive Web Design with HTML & CSS
+                  </p>
                 </div>
               </a>
             </li>
