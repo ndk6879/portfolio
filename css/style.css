@@ -674,7 +674,7 @@ button:focus {
 }
 
 @media screen and (max-width: 480px) {
-  .home__avatar {
+  .home__container {
     width: 100%; 
     height: auto;
     transform: none;
