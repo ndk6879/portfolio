@@ -217,6 +217,8 @@ button:focus {
   background: var(--home-avatar-svg);
   position: relative;
   bottom: -70px;
+  /* max-width: 100%;
+  height: auto; */
   width: 600px;
   height: 600px;
   object-fit: cover;
@@ -578,6 +580,11 @@ button:focus {
 }
 
 @media screen and (max-width: 768px) {
+
+  .home__avatar {
+    width: 80%; 
+    height: auto; 
+  }
   .section {
     padding: 3rem 2rem;
   }
