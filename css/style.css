@@ -580,11 +580,6 @@ button:focus {
 }
 
 @media screen and (max-width: 768px) {
-
-  .home__avatar {
-    width: 80%; 
-    height: auto; 
-  }
   .section {
     padding: 3rem 2rem;
   }
@@ -675,5 +670,13 @@ button:focus {
     height: 3rem;
     bottom: 1.5rem;
     right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home__avatar {
+    width: 100%; 
+    height: auto;
+    transform: none;
   }
 }
