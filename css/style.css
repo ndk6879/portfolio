@@ -587,7 +587,7 @@ button:focus {
   .home__avatar {
     width: 100%;
     max-width: 300px; /* 필요에 따라 크기 조절 */
-    height: auto;
+    height: 300px;
     margin-bottom: 1.5rem; /* 이미지와 텍스트 사이 간격 */
   }
 
@@ -602,7 +602,7 @@ button:focus {
   .home__description {
     font-size: 1rem; /* 설명 크기 조절 */
   }
-  
+
   .section {
     padding: 3rem 2rem;
   }
