@@ -578,6 +578,31 @@ button:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .home__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .home__avatar {
+    width: 100%;
+    max-width: 300px; /* 필요에 따라 크기 조절 */
+    height: auto;
+    margin-bottom: 1.5rem; /* 이미지와 텍스트 사이 간격 */
+  }
+
+  .home__test {
+    width: 100%;
+  }
+
+  .home__title {
+    font-size: 2rem; /* 제목 크기 조절 */
+  }
+
+  .home__description {
+    font-size: 1rem; /* 설명 크기 조절 */
+  }
+  
   .section {
     padding: 3rem 2rem;
   }
@@ -616,6 +641,8 @@ button:focus {
     width: 100%;
   }
 
+  
+
   #home {
     padding-bottom: 3rem;
   }
@@ -624,6 +651,8 @@ button:focus {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
+
+  
 
   .majors {
     flex-direction: column;
@@ -671,10 +700,10 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .home__container .home__test {
     width: 100%; 
     height: auto;
     transform: none;
   }
-}
+} */
