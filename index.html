@@ -4,526 +4,123 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- SEO -->
-    <title>🖥️ Andy&#39;s Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio for world-renowned software
-    engineer Andy"
-    />
+
+    <title>🖥️ Andy's Portfolio</title>
+    <meta name="description" content="Portfolio for world-renowned software engineer Andy" />
     <meta name="author" content="Andy" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <!-- OG (Open Graph Data) -->
+
     <meta property="og:title" content="Andy's Portfolio" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://ndk6879.github.io/portfolio/"
-    />
-    <meta
-      property="og:image"
-      content="https://ndk6879.github.io/portfolio/images/og-v2.webp"
-    />
-    <!-- Google Fonts -->
+    <meta property="og:url" content="https://ndk6879.github.io/portfolio/" />
+    <meta property="og:image" content="https://ndk6879.github.io/portfolio/images/og-v2.webp" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/9eb162ac0d.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Typeit -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
     <script type="module" src="src/type.js" defer></script>
   </head>
 
-
-
-
-
-
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="header__logo">
-        <h1 class="header__logo__title"><a href="#">🖥️ Andy</a></h1>
-        
-        <!-- Resume Button -->
-      <div class="header__resume">
-        
-        <a href="https://drive.google.com/file/d/1haWpvA934S4apPqW_2wn8j9U9tWC4JMS/view?usp=drive_link" class="resume-btn" target="_blank">Resume</a>
+        <h1 class="header__logo__title"><a href="#">🖥️ Andy </a></h1>
+        <div class="header__resume">
+          <a href="https://drive.google.com/file/d/1haWpvA934S4apPqW_2wn8j9U9tWC4JMS/view?usp=drive_link" class="resume-btn" target="_blank">Resume</a>
+        </div>
       </div>
-      </div>
-      
-      
-
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li><a class="header__menu__item active" href="#home">Home</a></li>
-          <li><a class="header__menu__item" href="#about">About</a></li>
-          <li><a class="header__menu__item" href="#skills">Skills</a></li>
-          <li><a class="header__menu__item" href="#work">My work</a></li>
-          <!-- <li>
-            <a class="header__menu__item" href="#testimonial">Testimonial</a>
-          </li> -->
-          <li><a class="header__menu__item" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
       <button class="header__toggle" aria-label="navigation menu toggle">
         <i class="fa-solid fa-bars"></i>
       </button>
     </header>
 
-
-
-
-
-    
-    <!-- Main -->
     <main>
-      <!-- Home -->
       <section id="home">
         <div class="max-container home__container">
-          <img
-            class="home__avatar"
-            src="images/profile.png"
-            alt="Andy's profile"
-          />
-          <div class = "home__test">
+          <img class="home__avatar" src="images/profile.png" alt="Andy's profile" />
+          <div class="home__test">
             <h2 class="home__title" aria-label="Hello, I'm Andy">
-              Hello <br />I&#39;m
-              <strong class="home__title--strong">Software Engineer</strong>, Andy
+              Hello <br />I&#39;m <strong class="home__title--strong">Software Engineer</strong>, Andy
             </h2>
             <p class="home__description">
-                A software engineer in State College, Pennsylvania<br>
-                Scroll down to learn more about me 👋
+              A software engineer in State College, Pennsylvania<br>
+              Scroll down to learn more about me 👋
             </p>
             <a class="home__contact" href="#contact">Contact Me</a>
           </div>
         </div>
       </section>
 
+      <section id="projects" class="section project-section">
+        <div class="project-container">
+          <div class="project-info">
+            <h3 class="project-title">Menu Search Platform</h3>
+            <p class="project-description">An interactive web platform that allows users to search for recipes based on the ingredients they have.<br>Each entry includes the dish name, ingredients, and helpful tips or video links for cooking.</p>
+            <p class="project-tech">React, Node.js, Elasticsearch, Elastic Stack, MongoDB, Tailwind CSS</p>
+            <a class="project-link" href="https://github.com/ndk6879/MenuSearch">Github Link</a>
+          </div>
+          <div class="project-image">
+            <img class="project-img" src="images/projects/Menu Search.png" alt="project preview" />
+          </div>
+        </div>
+        <hr class="project-divider" />
 
-      
-      <!-- About -->
-      <section id="about" class="section max-container">
-        <h2 class="title">About me</h2>
-        <p class="description">
-            Pursuing a Bachelor of Science in Computer Science at Penn State<br>
-            1.5 years of experience in Software Engineering and leading side projects.
-            <br>I create efficient, user-friendly products using modern technology. 
-            <br>Committed to being a developer who optimizes, maintains, and builds scalable, 
-            <br>high-performance solutions that drive innovation.
-        </p>
-        <ul class="majors">
-          <li class="major">
-            <i class="fa-brands fa-html5 major__icon"></i>
-            <p class="major__title">Languages</p>
-            <p>Python, Go, Java, JavaScript, C/C++</p>
-          </li>
-          <li class="major">
-            <i class="fa-solid fa-server major__icon"></i>
-            <p class="major__title">Framework & Libraries</p>
-            <p>React, Node.js, Express, jQuery, Django, OCR, Selenium</p>
-          </li>
-          <li class="major">
-            <i class="fa-solid fa-mobile major__icon"></i>
-            <p class="major__title">Database & DevOps</p>
-            <p>MySQL, PostgreSQL, MongoDB, Git, AWS, Power BI</p>
-          </li>
+        <div class="project-container">
+          <div class="project-info">
+            <h3 class="project-title">Interactive SignUp Form</h3>
+            <p class="project-description">Responsive sign-up form built with React and TypeScript.<br>It uses Zod for real-time input validation and shows helpful error messages.<br>Can be reused as a modern template for various forms.</p>
+            <p class="project-tech"> Typescript, React, Zod, Tailwind CSS</p>
+            <a class="project-link" href="https://github.com/ndk6879/Interactive-Sign-Up-Form-with-Modern-Validation">Github Link</a>
+          </div>
+          <div class="project-image">
+            <img class="project-img" src="images/projects/Signup.png" alt="project preview" />
+          </div>
+        </div>
+        <hr class="project-divider" />
 
-        </ul>
-        <ul class="jobs">
-          <li class="job">
-            <img src="images/jobs/3ds.png" alt="3ds logo" />
-            <div>
-              <p class="job__name">Dassault Systèmes as Software Engineer Intern</p>
-              <p class="job__period">2023 July - 2024 July</p><br>
-              <!-- <ul>What I did in Dassault Systèmes.</ul>
-              <ul>What I did in Dassault Systèmes.</ul>
-              <ul>What I did in Dassault Systèmes.</ul>
-              <ul>What I did in Dassault Systèmes.</ul>
-              <ul>What I did in Dassault Systèmes.</ul>
-              <ul>What I did in Dassault Systèmes.</ul>
-              <ul>What I did in Dassault Systèmes.</ul> -->
-            </p>
-            </div>
-          </li>
-          <li class="job">
-            <img src="images/jobs/ahnlab.jpeg" alt="ahnlab logo" />
-            <div>
-              <p class="job__name">Ahnlab Inc. as Software Engineer Intern</p>
-              <p class="job__period">2022 June - 2022 December</p>
-              <!-- <ul>What I did in Ahnlab.</ul>
-              <ul>What I did in Ahnlab.</ul>
-              <ul>What I did in Ahnlab.</ul>
-              <ul>What I did in Ahnlab.</ul>
-              <ul>What I did in Ahnlab.</ul>
-              <ul>What I did in Ahnlab.</ul> -->
+        <div class="project-container third">
+          <div class="project-info">
+            <h3 class="project-title">Online Community Platform</h3>
+            <p class="project-description">An online community platform where users can create, read, update, and delete posts and comments.<br>Led the project as a team leader, managing development.</p>
+            <p class="project-tech">React.js, Node.js, Express, MongoDB, Notion</p>
+            <a class="project-link" href="https://github.com/ndk6879/Board_Project/commits/main/">Github Link </a><br>
+            <a class="project-link" href="https://lush-acapella-ece.notion.site/775b6773c6e047929e6347320067ff1b">Notion </a><br>
+            <a class="project-link" href="https://lush-acapella-ece.notion.site/21f5431dbc21470392b4398a45d6ec52">Weekly Progress</a>
+          </div>
+          <div class="project-image">
+            <img class="project-img" src="images/projects/platform.png" alt="project preview" />
+          </div>
+        </div>
+        <hr class="project-divider" />
 
-            </div>
-          </li>
-        </ul>
-      </section>
-      <!-- Skills -->
-      <section id="skills" class="section">
-        <div class="max-container">
-          <h2 class="title">My Skills</h2>
-          <p class="description">Skills & Attributes</p>
-          <p>
-            <!-- 1.5 years of industry experience in design, implementation, testing, and API documentation.<br>
-            Specialized in crafting efficient, user-friendly products with modern technology.<br>
-            Committed to developing scalable, high-performance solutions that drive innovation. -->
-          </p>
-          <div class="skills">
-            <section class="skills__coding">
-              <h3 class="skills__title">Coding Skills</h3>
-              <ul>
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span>Python</span><span>98%</span>
-                  </div>
-                  <div class="bar__bg">
-                    <div class="bar__value" style="width: 98%"></div>
-                  </div>
-                </li>
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span>Java</span><span>95%</span>
-                  </div>
-                  <div class="bar__bg">
-                    <div class="bar__value" style="width: 95%"></div>
-                  </div>
-                </li>
-                
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span>SQL & NoSQL</span><span>95%</span>
-                  </div>
-                  <div class="bar__bg">
-                    <div class="bar__value" style="width: 95%"></div>
-                  </div>
-                </li>
-                
-
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span>Javascript</span><span>90%</span>
-                  </div>
-                  <div class="bar__bg">
-                    <div class="bar__value" style="width: 90%"></div>
-                  </div>
-                </li>
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span>React</span><span>90%</span>
-                  </div>
-                  <div class="bar__bg">
-                    <div class="bar__value" style="width: 90%"></div>
-                  </div>
-                </li>
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span>Nodejs</span><span>90%</span>
-                  </div>
-                  <div class="bar__bg">
-                    <div class="bar__value" style="width: 90%"></div>
-                  </div>
-                </li>
-
-                <li class="bar">
-                  <div class="bar__metadata">
-                    <span>Express</span><span>90%</span>
-                  </div>
-                  <div class="bar__bg">
-                    <div class="bar__value" style="width: 90%"></div>
-                  </div>
-                </li>
-              </ul>
-            </section>
-            
-            <section class="skills__tools">
-              <h3 class="skills__title">Tools</h3>
-              <ul>
-                <br>
-                <br>
-                <li>Visual Studio Code</li>
-                <li>Jupyter Notebook</li>
-                <li>Notion</li>
-                <li>Jira</li>
-                <li>ChatGPT</li>
-              </ul>
-            </section>
-            <section class="skills__etc">
-              <h3 class="skills__title">Etc</h3>
-              <ul>
-                <br>
-                <li>Slack</li>
-                <li>Zoom/Google Meet</li>
-                <li>Git</li>
-              </ul>
-            </section>
+        <div class="project-container fourth">
+          <div class="project-info">
+            <h3 class="project-title">Menu Search Project (Original Version)</h3>
+            <p class="project-description">A simple ingredient-based recipe search tool built to help users find dishes using leftover ingredients at home.<br>Users can view a list of matching recipes by typing in one or more ingredients.</p>
+            <p class="project-tech">Python, Django, HTML, CSS, Bootstrap, Javascript, MySQL</p>
+            <a class="project-link" href="https://github.com/ndk6879/Menu-Search-Project?tab=readme-ov-file">Github Link</a>
+          </div>
+          <div class="project-image">
+            <img class="project-img" src="images/projects/Original Menu Search.png" alt="project preview" />
           </div>
         </div>
       </section>
-      <!-- Work -->
-      <section id="work" class="section">
-        <div class="max-container">
-          <h2 class="title">My work</h2>
-          <p class="description">Projects</p>
-          <ul class="categories">
-            <li>
-              <button class="category category--selected" data-category="all">
-                All <span class="category__count">8</span>
-              </button>
-            </li>
-            <li>
-              <button class="category" data-category="front-end">
-                Front-end <span class="category__count">4</span>
-              </button>
-            </li>
-            <li>
-              <button class="category" data-category="back-end">
-                Back-end <span class="category__count">4</span>
-              </button>
-            </li>
-            <!-- <li>
-              <button class="category" data-category="mobile">
-                Mobile <span class="category__count">2</span>
-              </button>
-            </li> -->
-          </ul>
-          <ul class="projects">
-            <li class="project" data-type="front-end">
-              <!-- <a href="#" target="_blank"> -->
-                <img
-                  src="images/projects/project1.webp"
-                  alt="project1"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>Full-Stack Application with Node.js & MongoDB</p>
-                </div>
-              </a>
-            </li>
-            <li class="project" data-type="front-end">
-              <!-- <a href="#" target="_blank"> -->
-                <img
-                  src="images/projects/project2.webp"
-                  alt="project2"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #2</h3>
-                  <p>E-Commerce Platform using React & JavaScript                 </p>
-                </div>
-              </a>
-            </li>
-            <li class="project" data-type="back-end">
-              <!-- <a href="#" target="_blank"> -->
-                <img
-                  src="images/projects/project3.webp"
-                  alt="project3"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #3</h3>
-                  <p>API Integration with Node.js & Express  
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="project" data-type="back-end">
-              <!-- <a href="#" target="_blank"> -->
-                <img
-                  src="images/projects/project4.webp"
-                  alt="project4"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #4</h3>
-                  <p>Cloud-Hosted Application with AWS & Node.js                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="project" data-type="front-end">
-              <!-- <a href="#" target="_blank"> -->
-                <img
-                  src="images/projects/project5.webp"
-                  alt="project5"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #5</h3>
-                  <p>Real-Time Data Dashboard with JavaScript & Power BI
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="project" data-type="back-end">
-              <!-- <a href="#" target="_blank"> -->
-                <img
-                  src="images/projects/project6.webp"
-                  alt="project6"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #6</h3>
-                  <p>Database-Driven Web App with MySQL & Node.js
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="project" data-type="back-end">
-              <!-- <a href="#" target="_blank"> -->
-                <img
-                  src="images/projects/project7.webp"
-                  alt="project7"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #7</h3>
-                  <p>Dynamic UI Development with React & JavaScript
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <li class="project" data-type="front-end">
-              <!-- <a href="#" target="_blank"> -->
-                <img
-                  src="images/projects/project8.webp"
-                  alt="project8"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #8</h3>
-                  <p>Responsive Web Design with HTML & CSS
-                  </p>
-                </div>
-              </a>
-            </li>
-            
-          </ul>
-        </div>
-      </section>
-
-      
-      <!-- Testimonials -->
-      <!-- <section id="testimonial" class="section max-container">
-        <h2 class="title">Testimonial</h2>
-        <p class="description">See what they say about me</p>
-        <ul class="testimonials">
-          <li class="testimonial">
-            <img
-              src="images/testimonials/people1.webp"
-              alt="people1"
-              class="testimonial__img"
-            />
-            <div class="testimonial__bubble">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ad
-                iusto, ea alias, at sit libero laboriosam eaque eum, reiciendis
-                obcaecati vitae non reprehenderit beatae officiis. Dolore
-                corporis eveniet labore.
-              </p>
-              <p>
-                <a href="#" class="testimonial__bubble__name">James Kim</a>
-                /Google
-              </p>
-            </div>
-          </li>
-          <li class="testimonial">
-            <img
-              src="images/testimonials/people2.webp"
-              alt="people2"
-              class="testimonial__img"
-            />
-            <div class="testimonial__bubble">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
-                adipisci quibusdam perspiciatis neque consequuntur nostrum
-                quisquam dolore consequatur voluptatum animi laborum, sequi
-                ipsum rerum voluptatibus sit ab similique quos velit?
-              </p>
-              <p>
-                <a href="#" class="testimonial__bubble__name">Anna Jin</a>
-                /Samsung
-              </p>
-            </div>
-          </li>
-          <li class="testimonial">
-            <img
-              src="images/testimonials/people3.webp"
-              alt="people3"
-              class="testimonial__img"
-            />
-            <div class="testimonial__bubble">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis, mollitia. Fugiat recusandae unde ducimus harum
-                voluptas earum reiciendis expedita inventore quas ab eum
-                dignissimos, maiores deleniti officiis qui, repudiandae
-                voluptatibus?
-              </p>
-              <p>
-                <a href="#" class="testimonial__bubble__name">Anna Jin</a>
-                /Samsung
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section> -->
-
-
-      <!-- Arrow up -->
-      <aside>
-        <a class="arrow-up" href="#home" title="back to top">
-          <i class="fa-solid fa-arrow-up"></i>
-        </a>
-      </aside>
     </main>
 
-    
-    <!-- Footer -->
-    <footer id="contact" class="section">
-      <div class="max-container">
-        <h2 class="title">Let&#39;s talk</h2>
-        <p class="description">andy.nam.engineering@gmail.com</p>
-        <ul class="contact__links">
-          <li>
-            <a
-              class="contact__link"
-              href="https://github.com/ndk6879"
-              target="_blank"
-              title="my github link"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="contact__link"
-              href="https://www.linkedin.com/in/donggyun-nam/"
-              target="_blank"
-              title="my linkedin link"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-        <p>Andy Nam 2025 All rights reserved</p>
+    <footer class="footer">
+      <p>Donggyun Nam — 2025</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/donggyun-nam/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ndk6879" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:andy.nam.engineering@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
     </footer>
   </body>
