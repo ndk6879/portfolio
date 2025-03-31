@@ -774,7 +774,7 @@ button:focus {
 
 .project-link {
   font-size: 1rem;
-  text-decoration: underline; /* ✅ 언더라인 추가 */
+  text-decoration: underline; 
 }
 
 .project-image {
